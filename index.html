@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>QR Code Generators</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <section class="container">
+    <h1>QR Code Generators</h1>
+    <div class="generate">
+      <input type="text" id="textInput" placeholder="url or text" />
+      <button>QR Code yaratish</button>
+    </div>
+    <div id="qrcode"></div>
+    <div class="color-inputs">
+      <div class="color-input">
+        <label for="color">QR Code rangi</label>
+        <input type="color" id="color" value="#000000" />
+      </div>
+      <div class="color-input">
+        <label for="background">QR Code fon rangi</label>
+        <input type="color" id="background" value="#ffffff" />
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
